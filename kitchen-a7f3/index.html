@@ -241,23 +241,18 @@ footer p{margin:0 0 .4rem;max-width:44rem}
 .langbar a:hover{color:var(--ink)}
 .langbar a.on{color:var(--ink);background:var(--burgundy)}
 </style><style>
-.letter{font-family:PTS,serif;font-size:1.2rem;line-height:1.62;max-width:34rem}
-.letter p{margin:0 0 1.1em}
-.note{color:var(--ink-dim);font-size:.95rem;max-width:34rem;margin:.6rem 0 0}
-.money{width:100%;border-collapse:collapse;margin-top:1.4rem;font-size:.95rem;max-width:34rem}
-.money td{padding:.5rem 0;border-bottom:1px solid var(--line)}
-.money td:last-child{text-align:right;font-variant-numeric:tabular-nums;color:var(--ink)}
-.money td:first-child{color:var(--ink-dim)}
-.line{border-left:2px solid var(--burgundy);padding-left:1.2rem;margin:1.6rem 0;max-width:34rem}
-.line b{font-family:PTS,serif;font-weight:400;font-size:1.15rem;display:block;margin-bottom:.5rem;color:var(--ink)}
-.line span{color:var(--ink-dim);font-size:.95rem}
-.wall{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.2rem;max-width:38rem}
-.wall i{font-style:normal;font-family:PTNarrow,sans-serif;font-size:.78rem;letter-spacing:.1em;
-  border:1px solid var(--line);padding:.35rem .7rem;color:var(--ink-dim)}
-.todo{background:var(--burgundy);color:#fff;font-family:PTNarrow,sans-serif;font-size:.7rem;
+body{font-size:16px}
+.wrap{max-width:44rem}
+section{padding:4.5rem 0 0}
+.letter{font-family:PTS,serif;font-size:1.18rem;line-height:1.66;max-width:32rem}
+.letter p{margin:0 0 1.15em}
+.note{color:var(--ink-dim);font-size:.92rem;max-width:32rem;margin:.55rem 0 0}
+.jukebox{gap:2.6rem}
+.todo{background:var(--burgundy);color:#fff;font-family:PTNarrow,sans-serif;font-size:.68rem;
   letter-spacing:.12em;padding:.1rem .45rem}
+footer{margin-top:5rem}
 </style>
-<header class="spine" style="min-height:auto;padding:6rem 0 3.5rem">
+<header class="spine" style="min-height:auto;padding:7rem 0 3rem;border-bottom:none">
   <div class="wrap spine__in">
     <div class="wordmark">3&nbsp;ПРОЦЕНТА<span>для тех, кто скинулся</span></div>
   </div>
@@ -265,25 +260,19 @@ footer p{margin:0 0 .4rem;max-width:44rem}
 
 <main class="wrap">
 
-<section class="tight">
-  <div class="eyebrow">Письмо</div>
+<section class="tight" style="padding-top:0">
   <div class="letter">
     <p>Вы скинулись не на проект. Вы скинулись, потому что это я — и я это понимаю
     буквально, без красивых слов. Поэтому эта страница не для публики и её нет в поиске.</p>
-    <p>Здесь то, что не выйдет больше нигде: демки в том виде, в каком они сейчас,
-    отбракованные обложки, и честный счёт — куда ушли деньги.</p>
-    <p>Спасибо. Дальше — по делу.</p>
+    <p>Здесь пять треков в том виде, в каком они сейчас. Два записаны в студии,
+    три начитаны дома поверх тегнутых превью — тег слышно, звук сырой, так и должно быть
+    на этой стадии.</p>
+    <p>Спасибо.</p>
   </div>
-  <p class="note"><span class="todo">ПЕРЕПИСАТЬ СВОИМ ГОЛОСОМ</span> — это болванка,
-  она должна звучать как ты, а не как я.</p>
+  <p class="note"><span class="todo">ПЕРЕПИСАТЬ СВОИМ ГОЛОСОМ</span></p>
 </section>
 
 <section>
-  <div class="eyebrow">Кухня</div>
-  <div class="col"><h2>Пять треков, как есть сейчас</h2>
-  <p class="lede">Два записаны в студии и сведены. Три — начитаны дома поверх тегнутых
-  превью: тег слышно, звук сырой, это нормально на этой стадии.</p></div>
-
   <div class="jukebox">
     <div class="jtrack intro">
       <img class="jtrack__art" src="../assets/covers/paradnaya.jpg" alt="">
@@ -292,8 +281,8 @@ footer p{margin:0 0 .4rem;max-width:44rem}
         <h3>Парадная Поребрик Бадлон</h3>
         <span class="jstatus jstatus--done">студия, сведён</span>
         <audio controls src="../assets/audio/paradnaya.mp3"></audio>
-        <p class="note">Самый ранний записанный трек. Про воображаемое возвращение:
-        переснять семейные фото, чтобы родителям больше не надо было на работу.</p>
+        <p class="note">Про воображаемое возвращение: переснять семейные фото,
+        чтобы родителям больше не надо было на работу.</p>
       </div>
     </div>
 
@@ -305,7 +294,7 @@ footer p{margin:0 0 .4rem;max-width:44rem}
         <span class="jstatus jstatus--done">студия, сведён</span>
         <audio controls src="../assets/audio/pismo-rodine.mp3"></audio>
         <p class="note">Финал собран из двух разных дублей: первая часть с одного,
-        концовка с другого — тот финал вышел удачнее. Стык в тишине, его не слышно.</p>
+        концовка с другого. Стык в тишине, его не слышно.</p>
       </div>
     </div>
 
@@ -316,8 +305,8 @@ footer p{margin:0 0 .4rem;max-width:44rem}
         <h3>Буду Мечтать</h3>
         <span class="jstatus">домашнее демо</span>
         <audio controls src="../assets/audio/budu-mechtat.m4a"></audio>
-        <p class="note">Начинается как дурашливое перечисление — b2b, аяваска, кругосветка
-        на гидроциклах. Во втором куплете разворачивается и режет по живому.</p>
+        <p class="note">Начинается как дурашливое перечисление, во втором куплете
+        разворачивается и режет по живому.</p>
       </div>
     </div>
 
@@ -328,8 +317,8 @@ footer p{margin:0 0 .4rem;max-width:44rem}
         <h3>Быть Бедным</h3>
         <span class="jstatus">домашнее демо</span>
         <audio controls src="../assets/audio/byt-bednym.m4a"></audio>
-        <p class="note">Название рабочее. Держится на анафоре «да что вы знаете о том» —
-        она открывает трек и открывает вторую половину, сшивая обе части.</p>
+        <p class="note">Держится на анафоре «да что вы знаете о том» — она открывает
+        трек и открывает вторую половину, сшивая обе части.</p>
       </div>
     </div>
 
@@ -341,63 +330,10 @@ footer p{margin:0 0 .4rem;max-width:44rem}
         <span class="jstatus">домашнее демо</span>
         <audio controls src="../assets/audio/spasi-i-sohrani.m4a"></audio>
         <p class="note">Самый тяжёлый текст из пяти. Заканчивается четырьмя строчками,
-        после которых в треке больше ничего не нужно.</p>
+        после которых больше ничего не нужно.</p>
       </div>
     </div>
   </div>
-</section>
-
-<section class="cont">
-  <div class="eyebrow">Строчки</div>
-  <div class="col"><h2>Почему они такие</h2></div>
-
-  <div class="line"><b>«а я все тот же мама слышишь / да я все тот же»</b>
-  <span>Единственное место, где он обращается к матери напрямую. Всё письмо — про то,
-  что он изменился и не вернётся. И ровно посередине — обещание, что не изменился.</span></div>
-
-  <div class="line"><b>«на карте мира я отмечен / черным пятном»</b>
-  <span>Не метафора изгнания, а буквально: точка, которую не показывают.</span></div>
-
-  <div class="line"><b>«Место смерти запиши / Украина, лес, пенёк»</b>
-  <span>Три слова вместо описания. Чем суше сказано, тем сильнее бьёт.</span></div>
-
-  <p class="note"><span class="todo">ДОБАВИТЬ СВОИ</span> — здесь должны быть твои
-  комментарии, а не мои догадки. Это то, что фанаты перечитывают.</p>
-</section>
-
-<section class="cont">
-  <div class="eyebrow">Счёт</div>
-  <div class="col"><h2>Куда ушли деньги</h2>
-  <p class="lede">Честно и по пунктам, чтобы не было неловкого вопроса.</p></div>
-  <table class="money">
-    <tr><td>Бит BREAK — «Письмо родине», лицензия UNLIMITED</td><td>$159.59</td></tr>
-    <tr><td>Бит CHOP — «Парадная», лицензия BASIC</td><td>$66.49</td></tr>
-    <tr><td>Студийная запись, сессия 29 июля</td><td>€90</td></tr>
-    <tr><td>Генерация визуала, обложки</td><td>$3</td></tr>
-    <tr><td>Мастеринг</td><td>0 — покрыт подпиской LANDR</td></tr>
-  </table>
-  <p class="note">Остальные три бита ещё не выкуплены — лицензию берём перед записью
-  вокала, не раньше, чтобы не платить за то, что может не дойти до релиза.</p>
-</section>
-
-<section class="cont">
-  <div class="eyebrow">Дальше</div>
-  <div class="col"><h2>План</h2></div>
-  <ul class="tt">
-    <li><b>Ближайшее.</b> Догнать студию по трём демкам.</li>
-    <li><b>Потом.</b> Сведение и мастеринг всего дропа.</li>
-    <li><b>Релиз.</b> Альбом «Парадная Поребрик Бадлон», осень 2026.</li>
-  </ul>
-  <p class="note"><span class="todo">ПОСТАВИТЬ ДАТЫ</span></p>
-</section>
-
-<section class="cont">
-  <div class="eyebrow">Спасибо</div>
-  <div class="col"><h2>Кто скинулся</h2></div>
-  <div class="wall">
-    <i>ник</i><i>ник</i><i>ник</i><i>ник</i><i>ник</i><i>ник</i>
-  </div>
-  <p class="note"><span class="todo">ВСТАВИТЬ НИКИ</span> — только те, кто не против.</p>
 </section>
 
 </main>
